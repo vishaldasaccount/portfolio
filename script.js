@@ -51,3 +51,24 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbwy6X13HLmHdPDC03y5t8
       })
       .catch(error => console.error('Error!', error.message))
   })
+
+//   -----------sticky nav---------
+
+let header = document.getElementById("nav");
+
+// Get the offset position of the header
+let sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickyHeader() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+// When the page is scrolled, execute stickyHeader
+window.onscroll = function() {
+  stickyHeader();
+};
