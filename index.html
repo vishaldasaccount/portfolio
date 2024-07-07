@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav id="nav"><a href="#header">
+        <img src="Images/vishal-logo.png" class="logo">
+    </a>
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav> 
+    <div id="header">
+        <div class="container">
+
+            <div class="header-text">
+                <p><span class="multiple-text"></span></p>
+                <h1>Hi, I'm <span>Vishal</span><br>Das From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------about--------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/man-vector2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am interested to work in a challenging and responsible position
+                        where I can apply and improve my knowledge and skills to contribute
+                        to a dynamic and growth oriented Organization. My aim is to be a
+                        full-stack web developer and grow my career.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing/Web Designing</li>
+                            <li><span>Front-End Development</span><br>Website interfaces</li>
+                            <li><span>Graphics</span><br>Graphic Designing/Web & Graphic Designing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>I'm fresher</span><br>I don't have experience yet</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2025</span><br>Bachelor of Arts from Delhi university</li>
+                            <li><span>2022</span><br>12th completed from CBSE Board</li>
+                            <li><span>2020</span><br>10th completed from CBSE Board</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------services-------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I create simplified yet stunning pages layouts. I create a website that is accessible in all screen size so your website visitors can easily intract with your site, no matter what divice they are using.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>We offer innovative UI & UX design services, aimed at delivering an excellent finished product in a timely manner. Through an innovative design process.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-compare"></i>
+                    <h2>Front-End Dev</h2>
+                    <p>creates websites using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site. When you visit a website, the design elements you see were created by a front-end developer.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------portfolio-------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work1.jpg">
+                    <div class="layer">
+                        <h3>Github Projects</h3>
+                        <p>I have created some website projects, for showcase you can see those projects by clicking link below. </p>
+                        <a href="https://github.com/vishaldasaccount" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work2.jpg">
+                    <div class="layer">
+                        <h3>Wordpress Project</h3>
+                        <p>I have created some website projects, for showcase you can see those projects by clicking link below. </p>
+                        <a href="https://playbgmi.rf.gd/?i=1" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work3.jpg">
+                    <div class="layer">
+                        <h3>Graphics Projects</h3>
+                        <p>I have created some website projects, for showcase you can see those projects by clicking link below. </p>
+                        <a href="https://www.behance.net/vishaldas19" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+<!-- -------------------contact------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> vishaldas0204@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 8287250204</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100033872583439" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/VishalDas447001" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/vishal_v143_/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/vishal-das-002165257/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Images/Vishal Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 Vishal Portfolio. All Rights Reserved</p>
+    </div>
+</div>
+
+<!-----------------typed js--------------->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<!------------main js--------------->
+    <script src="script.js"></script>
+    <script>
+        // Get the header
+let header = document.getElementById("nav");
+
+// Get the offset position of the header
+let sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickyHeader() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+// When the page is scrolled, execute stickyHeader
+window.onscroll = function() {
+  stickyHeader();
+};
+
+    </script>
+</body>
+
+</html>
