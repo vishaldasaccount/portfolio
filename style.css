@@ -355,7 +355,7 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(Images/desktop-vector4.png);
+        background-image: url(Images/desktop-vector4-min.png);
     }
     .logo{
         width: 132px;
@@ -392,6 +392,7 @@ nav .fa-solid{
         left: 25px;
         cursor: pointer;
     }
+    
     .sub-title{
         font-size: 40px;
     }
@@ -421,6 +422,42 @@ nav .fa-solid{
     color: #61b752;
     margin-top: -40px;
     display: block;
+}
+
+/* --------for 910px devices screen responsive--------- */
+
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 910px){
+
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
 }
 
 
