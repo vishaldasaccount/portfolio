@@ -26,7 +26,7 @@ function closemenu(){
 // --------------typed js------------>
 
 const typed = new Typed(".multiple-text", {
-    strings: ["Front-End Developer", "Web Designer"],
+    strings: ["Front-End Developer", "Web Designer", "UI/UX Designer"],
     typeSpeed: 70,
     backSpeed: 70,
     backDelay: 1000,
